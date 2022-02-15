@@ -62,6 +62,12 @@
 }
 
 
+.logo img{
+    width: 65%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
 .options-section .buttons{
     height: 78%;
 }
