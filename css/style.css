@@ -4,3 +4,35 @@
     padding: 0px;
 }
 
+/* Layout */
+.player{
+    height: 65px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #343434;
+}
+
+.options-section{
+    float: left;
+    height: calc(100vh - 65px);
+    width: 195px;
+    background-color: black;
+    
+}
+
+.choose-songs{
+    float: left;
+    height: calc(100vh - 65px);
+    width: calc(100% - 195px);
+    background-color: rgb(16 24 32);
+}
+
+
+
+
+/* / Layout */
+
+
+/*debug*/ 
