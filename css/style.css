@@ -103,11 +103,88 @@ a:hover {
     color: white;
 }
 
+
+.volume-option > div{
+    border: 1px dashed turquoise;
+    float: left;
+    height: 100%;
+}
+
+.volume-option #wifi-screen{
+    width: 30%;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#wifi-screen i{
+    font-size: 20px;
+    color: gray;
+}
+
+#wifi-screen i:hover{
+    color: white;
+}
+
+#wifi-screen .fa-list{
+    margin-right: 20px;
+}
+
+
+.volume-option #volume{
+    width: 70%;
+    padding: 20px;
+    position: relative;
+}
+
+#volume .fa-volume-up{
+    font-size: 20px;
+    color: gray;
+    margin-right: 10px;
+}
+
+#volume .fa-volume-up:hover{
+    color: white;
+}
+
+#volume #volume-bar{
+    border: 3px solid grey;
+    width: 120px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+#volume #volume-level{
+    position: absolute;
+    left: 56px;
+    top: 26px;
+    border: 3px solid rgb(214, 214, 214);
+    border-radius: 15px;
+    width: 63px;
+}
+
+#volume #volume-level:hover{
+    border-color: rgb(47, 233, 0);
+}
+
+
 .central-player div{
     border: 1px dashed green;
     width: 100%;
     height: 50%;
 }
+
+
+
+
+
+
+
+
+
+
 /***** OPZIONI PARTE LATERALE ******/
 .options-section{
     float: left;
