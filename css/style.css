@@ -20,6 +20,22 @@
     bottom: 0px;
     left: 0px;
     background-color: #343434;
+    display: flex;
+}
+
+.player .photo-song,
+.player .central-player,
+.player .volume-option{
+    height: 100%;
+}
+
+.player .photo-song,
+.player .volume-option{
+    width: 20%;
+}
+
+.player .central-player{
+    width: 60%;
 }
 
 
