@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .clearfix::after{
@@ -10,6 +12,18 @@
     display: table;
 }
 
+ul{
+    list-style-type: none;
+}
+
+a { 
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+}
+
+a:hover {
+    color: white;
+}
 /* Layout */
 
 /******* PARTE INFERIORE PLAYER MUSICA *********/
@@ -70,6 +84,28 @@
 
 .options-section .buttons{
     height: 78%;
+}
+
+.buttons #choice-options li{
+    margin-bottom: 10px;
+}
+
+#choice-options li:hover{
+    border-left: 2px solid rgb(94, 255, 0);
+}
+
+#choice-options a{
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+#choice-options a i{
+    font-size: 1.2rem;
+    color: rgb(172, 172, 172);
+}
+
+#choice-options a:hover i{
+    color: white;
 }
 /********* PARTE CENTRALE SCELTA CANZONI ********/
 .choose-songs{
