@@ -4,7 +4,15 @@
     padding: 0px;
 }
 
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
 /* Layout */
+
+/******* PARTE INFERIORE PLAYER MUSICA *********/
 .player{
     height: 65px;
     width: 100%;
@@ -14,6 +22,8 @@
     background-color: #343434;
 }
 
+
+/***** OPZIONI PARTE LATERALE ******/
 .options-section{
     float: left;
     height: calc(100vh - 65px);
@@ -22,13 +32,24 @@
     
 }
 
+
+
+/********* PARTE CENTRALE SCELTA CANZONI ********/
 .choose-songs{
     float: left;
     height: calc(100vh - 65px);
     width: calc(100% - 195px);
     background-color: rgb(16 24 32);
+    overflow-y: scroll;
+    position: relative;
 }
 
+.choose-songs header{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.568);
+}
 
 
 
@@ -36,3 +57,15 @@
 
 
 /*debug*/ 
+
+
+
+
+/* / Debug */ 
+
+
+/* media-queries */
+
+
+
+/* / media queries */ 
