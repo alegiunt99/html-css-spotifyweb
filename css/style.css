@@ -54,6 +54,27 @@ a:hover {
     width: 60%;
 }
 
+.player .photo-song img{
+    width: 18%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.photo-song #song-name{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#song-name a #title-song{
+    font-size: 17px;
+    font-weight: 900;
+}
+
+#song-name a #subtitle{
+    color: #9d9d9d;
+    font-size: 10px;
+}
+
 
 /***** OPZIONI PARTE LATERALE ******/
 .options-section{
