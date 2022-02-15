@@ -45,11 +45,26 @@
     height: calc(100vh - 65px);
     width: 195px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
     
 }
 
+.options-section .logo,
+.options-section .buttons,
+.options-section .user{
+    width: 100%;
+}
+
+.options-section .logo,
+.options-section .user{
+    height: 12%;
+}
 
 
+.options-section .buttons{
+    height: 78%;
+}
 /********* PARTE CENTRALE SCELTA CANZONI ********/
 .choose-songs{
     float: left;
