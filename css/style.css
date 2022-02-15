@@ -54,6 +54,10 @@ a:hover {
     width: 60%;
 }
 
+.photo-song {
+    position: relative;
+}
+
 .player .photo-song img{
     width: 18%;
     margin-left: 10px;
@@ -73,6 +77,29 @@ a:hover {
 #song-name a #subtitle{
     color: #9d9d9d;
     font-size: 10px;
+}
+
+.photo-song .heart-save{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+
+.photo-song .heart-save i{
+    font-size: 20px;
+    color: gray;
+}
+
+.photo-song .heart-save i:hover{
+    color: white;
+}
+
+.photo-song .heart-save .fa-heart{
+    margin-right: 15px;
+}
+
+.photo-song .heart-save .fa-heart:hover{
+    color: red;
 }
 
 
@@ -169,6 +196,18 @@ a:hover {
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
     margin-right: 10px;
+}
+
+#download-app a i {
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 8px;
+}
+
+#download-app a:hover i{
+    color: white;
 }
 
 .user #user-account{
