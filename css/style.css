@@ -250,6 +250,10 @@ a:hover {
     
 }
 
+.options-section .logo #mini-logo{
+    display: none;
+}
+
 .options-section .logo,
 .options-section .buttons,
 .options-section .user{
@@ -554,5 +558,42 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 520px){
+    .options-section{
+        width: fit-content;
+        padding-right: 10px;
+    }
 
+    .options-section .logo,
+    .options-section .user{
+        height: 0;
+    }
+
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    .options-section .logo #first-logo{
+        display: none;
+    }
+
+    .options-section .logo #mini-logo{
+        display: inline-block;
+    }
+
+    .buttons #create-playlist,
+    .buttons #scroll-options{
+        display: none;
+    }
+
+    .choose-songs{
+        width: calc(100% - 53px);
+    }
+
+    .choose-songs main .images{
+        width: calc(100% / 2);
+        flex-shrink: 0;
+    }
+    
+}
 /* / media queries */ 
