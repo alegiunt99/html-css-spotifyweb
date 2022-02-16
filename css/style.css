@@ -502,4 +502,57 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 760px) {
+    .player .photo-song,
+    .player .central-player,
+    .player .volume-option{
+        width: calc(100% / 3);
+}
+
+    .photo-song #song-image{
+        width: 94px;
+        margin-right: 4%;
+    }
+
+    .photo-song #song-name{
+
+    }
+
+    .photo-song .heart-save {
+        width: 12px;
+    }
+
+    .photo-song .heart-save .fa-heart{
+        font-size: 12px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .photo-song .heart-save .fa-folder{
+        font-size: 11px;
+
+    }
+
+    .central-player #central-top .fas{
+        margin-right: 12px;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    .choose-songs main .mini-nav{
+        flex-wrap: wrap;
+    }
+
+    .choose-songs main .images{
+        flex-wrap: wrap;
+    }
+
+    .choose-songs main .images .image-box{
+        width: calc(100% /2);
+        flex-shrink: 0;
+    }
+}
+
+
 /* / media queries */ 
