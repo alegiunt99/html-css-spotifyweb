@@ -482,6 +482,10 @@ a:hover {
 .images .image-box img:hover{
     filter: grayscale(10) brightness(0.9);
 }
+
+.most-popular .images img{
+    border-radius: 50%;
+}
 /* / Layout */
 
 
