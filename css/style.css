@@ -111,8 +111,9 @@ a:hover {
 
 .volume-option #wifi-screen{
     width: 30%;
-    padding-top: 20px;
-    padding-left: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #wifi-screen i{
@@ -125,20 +126,22 @@ a:hover {
 }
 
 #wifi-screen .fa-list{
-    margin-right: 20px;
+    margin-right: 12px;
 }
 
 
 .volume-option #volume{
     width: 70%;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
 #volume .fa-volume-up{
     font-size: 20px;
     color: gray;
-    margin-right: 10px;
+    margin-right: 19px;
 }
 
 #volume .fa-volume-up:hover{
@@ -147,21 +150,21 @@ a:hover {
 
 #volume #volume-bar{
     border: 3px solid grey;
-    width: 120px;
+    width: 61%;
     border-radius: 15px;
     display: inline-block;
-    margin-bottom: 5px;
     cursor: pointer;
 }
 
 
 #volume #volume-level{
+    
     position: absolute;
-    left: 56px;
-    top: 26px;
+    left: 24%;
+    height: 0;
     border: 3px solid rgb(214, 214, 214);
     border-radius: 15px;
-    width: 63px;
+    width: 37%;
 }
 
 #volume #volume-level:hover{
@@ -273,8 +276,8 @@ a:hover {
     margin-bottom: 10px;
 }
 
-#choice-options li:hover{
-    border-left: 2px solid rgb(94, 255, 0);
+.buttons #choice-options .fa-home{
+    border-left: 2px solid rgb(47, 233, 0);
 }
 
 #choice-options a{
@@ -288,6 +291,10 @@ a:hover {
 
 #choice-options a:hover i{
     color: white;
+}
+
+#choice-options a img{
+    width: 15px;
 }
 
 #create-playlist{
@@ -373,6 +380,7 @@ a:hover {
     height: 65px;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.568);
+    z-index: 1;
 }
 
 .choose-songs header a{
@@ -471,16 +479,27 @@ a:hover {
 /* / Layout */
 
 
-/*debug*/ 
-
-
-
-
-/* / Debug */ 
-
 
 /* media-queries */
 
+@media screen and (max-width: 880px) {
 
+    .choose-songs header a{
+        right: 26%;
+    }
+
+    .choose-songs main .mini-nav{
+        flex-wrap: wrap;
+    }
+
+    .choose-songs main .images{
+        flex-wrap: wrap;
+    }
+
+    .choose-songs main .images .image-box{
+        width: calc(100% /4);
+        flex-shrink: 0;
+    }
+}
 
 /* / media queries */ 
