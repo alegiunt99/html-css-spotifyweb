@@ -61,16 +61,17 @@ a:hover {
     float: left;
     width: calc(100% / 3);
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-#song-image img{
-    width: 58%;
-    margin-left: 19px;
+.photo-song #song-image img{
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-#song-name{
-    padding-top: 15px;
+.photo-song #song-name{
+    flex-direction: column;
 }
 
 #song-name h4{
@@ -78,14 +79,14 @@ a:hover {
 }
 
 #song-name span{
-    font-size: 10px;
+    font-size: 7px;
     color: gray;
 }
 
 .heart-save .fa-heart{
     font-size: 20px;
-    margin-right: 20px;
-    padding-left: 14px;
+    margin-right: 10px;
+    padding-left: 4px;
     padding-top: 20px;
     color: gray;
 }
@@ -95,6 +96,7 @@ a:hover {
 }
 
 .heart-save .fa-folder{
+    padding-top: 20px;
     font-size: 20px;
     color: gray;
 }
@@ -280,7 +282,7 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.buttons #choice-options .fa-home{
+.buttons #choice-options #green-border{
     border-left: 2px solid rgb(47, 233, 0);
 }
 
@@ -513,27 +515,23 @@ a:hover {
         width: calc(100% / 3);
 }
 
-    .photo-song #song-image{
-        width: 94px;
-        margin-right: 4%;
-    }
-
     .photo-song #song-name{
 
     }
 
     .photo-song .heart-save {
-        width: 12px;
+        width: 29px;
     }
 
     .photo-song .heart-save .fa-heart{
-        font-size: 12px;
+        font-size: 18px;
         margin-left: 0px;
         padding-left: 0px;
     }
 
     .photo-song .heart-save .fa-folder{
-        font-size: 11px;
+        padding-top: 20px;
+        font-size: 18px;
 
     }
 
@@ -543,6 +541,10 @@ a:hover {
 }
 
 @media screen and (max-width: 640px){
+
+    #song-name h4{
+        font-size: 15px;
+    }
 
     .choose-songs main .mini-nav{
         flex-wrap: wrap;
@@ -559,18 +561,23 @@ a:hover {
 }
 
 @media screen and (max-width: 520px){
+
+    #song-name h4{
+        font-size: 12px;
+    }
+
     .options-section{
-        width: fit-content;
+        width: 50px;
         padding-right: 10px;
     }
 
-    .options-section .logo,
-    .options-section .user{
-        height: 0;
+    .options-section span{
+        display: none;
     }
 
-    .logo{
-        margin-bottom: 20px;
+    .options-section .logo, 
+    .options-section .user{
+        height: 14%;
     }
 
     .options-section .logo #first-logo{
@@ -579,7 +586,26 @@ a:hover {
 
     .options-section .logo #mini-logo{
         display: inline-block;
+        width: 100%;
     }
+
+    #choice-options a i{
+        font-size: 2.2rem;
+    }
+
+    #choice-options a img {
+        width: 29px;
+    }
+
+    #download-app a i{
+        font-size: 1.5rem;
+    }
+
+    #user-account a i{
+        font-size: 2.3rem;
+    }
+
+
 
     .buttons #create-playlist,
     .buttons #scroll-options{
@@ -590,10 +616,7 @@ a:hover {
         width: calc(100% - 53px);
     }
 
-    .choose-songs main .images{
-        width: calc(100% / 2);
-        flex-shrink: 0;
-    }
+   
     
 }
 /* / media queries */ 
